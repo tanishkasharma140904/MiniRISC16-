@@ -37,10 +37,7 @@ This project was built to understand processor architecture, digital logic desig
 ---
 
 # 🏗️ Processor Architecture
-
-text                 +----------------+                 | Program Counter|                 +--------+-------+                          |                          v                 +----------------+                 | Instruction    |                 | Memory         |                 +--------+-------+                          |                          v                 +----------------+                 | Instruction    |                 | Decoder        |                 +--------+-------+                          |                          v                 +----------------+                 | Control Unit   |                 +--------+-------+                          |        +-----------------+----------------+        |                                  |        v                                  v  +--------------+                +----------------+ | Register File|--------------->|      ALU       | +--------------+                +----------------+        ^                                  |        |                                  |        +----------------------------------+                  Write Back 
-
----
+![alt text](image.png)
 
 # 🧠 How the Processor Works
 
@@ -123,15 +120,12 @@ Stops processor execution.
 ---
 
 # 📊 Expected Output
-
-text ====================================         MiniRISC16 Execution ====================================  Program Executed:  1. MOVI R1,10 2. MOVI R2,5 3. ADD  R3,R1,R2 4. SUB  R4,R1,R2 5. AND  R5,R1,R2 6. OR   R6,R1,R2 7. HALT  ------------------------------------  Register Values:  R1 = 10   (First Operand) R2 = 5    (Second Operand)  R3 = 15   (10 + 5) R4 = 5    (10 - 5) R5 = 0    (10 AND 5) R6 = 15   (10 OR 5)  ------------------------------------  CPU Status: HALTED Program Counter: 8  Execution Successful  ==================================== 
+![alt text](image-1.png)
 
 ---
 
 # 📂 Project Structure
-
-text MiniRISC16/ │ ├── alu.v ├── register_file.v ├── pc.v ├── instruction_memory.v ├── instruction_decoder.v ├── control_unit.v ├── mini_risc16.v │ ├── mini_risc16_tb.v │ ├── README.md └── INTERVIEW_NOTES.md 
-
+![alt text](image-2.png)
 ---
 
 # ⚙️ Prerequisites
